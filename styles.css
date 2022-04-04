@@ -44,6 +44,9 @@ button:hover {
   background-color: white;
   color: var(--main-color);
 }
+button:focus-within {
+  outline: 2px solid white;
+}
 p {
   font-size: 15px;
   color: var(--medium-gray);
@@ -115,6 +118,9 @@ h1 {
   user-select: none;
   cursor: pointer;
   transition: color 0.3s, background-color 0.3s;
+}
+.rating div:focus-within {
+  outline: 2px solid white;
 }
 .rating .inactive:hover {
   background-color: var(--light-gray);
@@ -238,5 +244,8 @@ h1 {
 .attribution a:hover::before {
   width: 100%;
   left: 0;
+}
+.attribution a:focus-within {
+  outline: 2px solid white;
 }
 /* Attribution end */
